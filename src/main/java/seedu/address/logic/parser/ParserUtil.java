@@ -9,6 +9,8 @@ import java.util.Set;
 import seedu.address.commons.core.index.Index;
 import seedu.address.commons.util.StringUtil;
 import seedu.address.logic.parser.exceptions.ParseException;
+import seedu.address.model.content.Date;
+import seedu.address.model.content.Tweet;
 import seedu.address.model.person.Address;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
@@ -63,6 +65,26 @@ public class ParserUtil {
             throw new ParseException(Phone.MESSAGE_CONSTRAINTS);
         }
         return new Phone(trimmedPhone);
+    }
+    /**
+     */
+    public static Tweet parseTweet(String tweet) throws ParseException {
+        requireNonNull(tweet);
+        String trimmedTweet = tweet.trim();
+        if (!Tweet.isValidTweet(trimmedTweet)) {
+            throw new ParseException(Tweet.MESSAGE_CONSTRAINTS);
+        }
+        return new Tweet(trimmedTweet);
+    }
+    /**
+     */
+    public static Date parseDate(String date) throws ParseException {
+        requireNonNull(date);
+        String trimmedDate = date.trim();
+        if (!Tweet.isValidTweet(trimmedDate)) {
+            throw new ParseException(Date.MESSAGE_CONSTRAINTS);
+        }
+        return new Date(trimmedDate);
     }
 
     /**
