@@ -115,7 +115,8 @@ public class AddCommandTest {
         }
 
         @Override
-        public void addContent(Content content) { throw new AssertionError("This method should not be called.");
+        public void addContent(Content content) {
+            throw new AssertionError("This method should not be called.");
 
         }
 
@@ -135,7 +136,8 @@ public class AddCommandTest {
         }
 
         @Override
-        public boolean hasContent(Content content) { throw new AssertionError("This method should not be called.");
+        public boolean hasContent(Content content) {
+            throw new AssertionError("This method should not be called.");
         }
 
         @Override
