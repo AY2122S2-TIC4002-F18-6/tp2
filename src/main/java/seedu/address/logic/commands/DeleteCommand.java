@@ -88,6 +88,7 @@ public class DeleteCommand extends Command {
 
 
             model.deletePostAll(postToRemove);
+            model.commitAddressBook(model.getAddressBook());
 
             return new CommandResult(outputMsg);
         }

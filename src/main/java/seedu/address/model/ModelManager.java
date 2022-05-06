@@ -22,7 +22,8 @@ import seedu.address.model.post.Post;
 public class ModelManager implements Model {
     private static final Logger logger = LogsCenter.getLogger(ModelManager.class);
 
-    private final AddressBook addressBook;
+    //private final AddressBook addressBook;
+    private final OldAddressBook addressBook;
     private final UserPrefs userPrefs;
     private final FilteredList<Person> filteredPersons;
     private final FilteredList<Post> filteredPosts;
@@ -35,14 +36,14 @@ public class ModelManager implements Model {
 
         logger.fine("Initializing with address book: " + addressBook + " and user prefs " + userPrefs);
 
-        this.addressBook = new AddressBook(addressBook);
+        this.addressBook = new OldAddressBook(addressBook);
         this.userPrefs = new UserPrefs(userPrefs);
         filteredPersons = new FilteredList<>(this.addressBook.getPersonList());
         filteredPosts = new FilteredList<>(this.addressBook.getPostList());
     }
 
     public ModelManager() {
-        this(new AddressBook(), new UserPrefs());
+        this(new OldAddressBook(), new UserPrefs());
     }
 
     //=========== UserPrefs ==================================================================================
@@ -217,6 +218,16 @@ public class ModelManager implements Model {
                 && userPrefs.equals(other.userPrefs)
                 && filteredPersons.equals(other.filteredPersons)
                 && filteredPosts.equals(other.filteredPosts);
+    }
+
+    @Override
+    public boolean undoAddressBook() {
+        return addressBook.undo();
+    }
+
+    @Override
+    public void commitAddressBook(ReadOnlyAddressBook toBeCommitted) {
+        addressBook.commit(toBeCommitted);
     }
 
 }

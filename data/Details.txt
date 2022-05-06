@@ -1,0 +1,80 @@
+Name: Alex Yeoh
+Phone: 87438807
+Email: alexyeoh@example.com
+Address: Blk 30 Geylang Street 29, #06-40
+Tag(s): [[clients]]
+
+
+Name: Bernice Yu
+Phone: 99272758
+Email: berniceyu@example.com
+Address: Blk 30 Lorong 3 Serangoon Gardens, #07-18
+Tag(s): [[clients], [VIP1]]
+
+
+Name: Charlotte Oliveiro
+Phone: 93210283
+Email: charlotte@example.com
+Address: Blk 11 Ang Mo Kio Street 74, #11-04
+Tag(s): [[clients]]
+
+
+Name: David Li
+Phone: 91031282
+Email: lidavid@example.com
+Address: Blk 436 Serangoon Gardens Street 26, #16-43
+Tag(s): [[clients]]
+
+
+Name: Irfan Ibrahim
+Phone: 92492021
+Email: irfan@example.com
+Address: Blk 47 Tampines Street 20, #17-35
+Tag(s): [[clients], [VIP2]]
+
+
+Name: Roy Balakrishnan
+Phone: 92624417
+Email: royb@example.com
+Address: Blk 45 Aljunied Street 85, #11-31
+Tag(s): [[clients], [inactive]]
+
+
+Name: John Doe
+Phone: 98765432
+Email: johnd@example.com
+Address: John street, block 123, #01-01
+Tag(s): []
+
+
+Name: test
+Phone: 98765432
+Email: johnd@example.com
+Address: John street, block 123, #01-01
+Tag(s): []
+
+
+Title: Important Notice：Warehouse Location changed in Guangzhou
+Content: Dear Customers, please notice that our ware house location changed to xx xxx xxxxx
+Category: notice
+Notes: send to all the clients, remember sent out by 18/03
+
+
+Title: Celebrate Our 6th Birthday with $6.6 OFF
+Content: Birthday Sales coming! Birthday goodies for everyone! Celebrate our Birthday with BEST Deals!
+Category: promotion
+Notes: remember sent out by 20/03, too all the registered client
+
+
+Title: [Notice] Drop in China Shipping Rate for all Sea shipment
+Content: Dear (Ship-For-Me) Customers, the adjustment on the rate will be $0.7/500g for Shanghai warehouse and $0.6/500g for Guangzhou warehouse, thanks for your support and hope to serve you again!
+Category: notice
+Notes: can not sent before the postdate, the shipping rate only start from April 1st
+
+
+Title: Your Parcel is ready to ship!
+Content: You order has already arrived our Guangzhou warehouse, please go our website to check : https://www.exampleshipment.sg , and remember the free storage period
+Category: service
+Notes: remember sent out by 01/03
+
+

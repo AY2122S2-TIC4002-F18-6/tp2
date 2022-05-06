@@ -75,4 +75,16 @@ public class StorageManager implements Storage {
         addressBookStorage.saveAddressBook(addressBook, filePath);
     }
 
+    /**
+     * Export Address book
+     */
+    public static void exportAddressBookToTxt(String personInfo, Path filePath) throws IOException {
+        logger.fine("Writing to: " + filePath);
+        logger.info("Writing to" + filePath);
+
+        ExportManager export = new ExportManager(filePath, personInfo);
+
+        export.exportToTxtFile();
+    }
+
 }
