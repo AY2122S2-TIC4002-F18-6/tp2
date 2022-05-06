@@ -124,6 +124,7 @@ public class EditCommand extends Command {
 
             model.setPerson(personToEdit, editedPerson);
             model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
+            model.commitAddressBook(model.getAddressBook());
             return new CommandResult(String.format(MESSAGE_EDIT_PERSON_SUCCESS, editedPerson));
 
         } else if (editContentDescriptor != null) {
@@ -141,6 +142,7 @@ public class EditCommand extends Command {
 
             model.setPost(postToEdit, editedPost);
             model.updateFilteredPostList(PREDICATE_SHOW_ALL_POSTS);
+            model.commitAddressBook(model.getAddressBook());
             return new CommandResult(String.format(MESSAGE_EDIT_POST_SUCCESS, editedPost));
         }
         return new CommandResult("Something went wrong, check your inputs again!");

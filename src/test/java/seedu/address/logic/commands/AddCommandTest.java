@@ -202,6 +202,16 @@ public class AddCommandTest {
         public void updateWholePostList(List<Post> postList) {
             throw new AssertionError("This method should not be called.");
         }
+
+        @Override
+        public boolean undoAddressBook() {
+            return false;
+        }
+
+        @Override
+        public void commitAddressBook(ReadOnlyAddressBook addressBook) {
+
+        }
     }
 
     /**

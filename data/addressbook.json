@@ -35,6 +35,18 @@
     "email" : "royb@example.com",
     "address" : "Blk 45 Aljunied Street 85, #11-31",
     "tagged" : [ "clients", "inactive" ]
+  }, {
+    "name" : "John Doe",
+    "phone" : "98765432",
+    "email" : "johnd@example.com",
+    "address" : "John street, block 123, #01-01",
+    "tagged" : [ ]
+  }, {
+    "name" : "test",
+    "phone" : "98765432",
+    "email" : "johnd@example.com",
+    "address" : "John street, block 123, #01-01",
+    "tagged" : [ ]
   } ],
   "posts" : [ {
     "title" : "Important Notice：Warehouse Location changed in Guangzhou",

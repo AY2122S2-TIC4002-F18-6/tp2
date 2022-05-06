@@ -150,5 +150,11 @@ public interface Model {
      */
     void updateWholePostList(List<Post> postList);
 
+    /**
+     * Undo the latest commit
+     * Throws CommandException if no previous commit
+     */
+    boolean undoAddressBook();
 
+    void commitAddressBook(ReadOnlyAddressBook addressBook);
 }
